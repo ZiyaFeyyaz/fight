@@ -1,0 +1,9 @@
+.row
+  .col-lg-12.text-center
+    h1 Fight Result
+
+.row
+  .col-lg-6.text-center
+    = render 'pages/character', character: @winner, status: 'Winner'
+  .col-lg-6.text-center
+    = render 'pages/character', character: @loser, status: 'Loser'

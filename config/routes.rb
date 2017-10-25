@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :characters
   root 'pages#index'
+  resources :characters
+
+  post 'fight' => 'pages#fight'
 end
