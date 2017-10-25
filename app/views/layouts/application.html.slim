@@ -17,20 +17,13 @@ body
       #navbarResponsive.collapse.navbar-collapse
         ul.navbar-nav.ml-auto
           li.nav-item.active
-            a.nav-link href="#"
+            a.nav-link href="/"
               | Home
               span.sr-only (current)
           li.nav-item
-            a.nav-link href="#"  About
-          li.nav-item
-            a.nav-link href="#"  Services
-          li.nav-item
-            a.nav-link href="#"  Contact
+            a.nav-link href = characters_path  Characters
   /! Page Content
-  .container
-    .row
-      .col-lg-12.text-center
-        h1.mt-5 This is a best fight application
-        p.lead Press button "fight" to start the fight between characters!
-    .row
-      = yield
+  .container.mt-5
+    .row.pt-3
+      .col
+        = yield

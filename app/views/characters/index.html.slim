@@ -1,0 +1,26 @@
+.row
+  .col-lg-12
+    p#notice = notice
+
+    h1 Characters
+
+    = link_to 'New Character', new_character_path
+
+.row
+  .col-lg-12.text-center
+    table.table.table-hover
+      thead
+        tr
+          th Name
+          th Health points
+          th Attack power
+          th colspan="3"
+      tbody
+        - @characters.each do |character|
+          tr
+            td = character.name
+            td = character.health_points
+            td = character.attack_power
+            td = link_to 'Show', character
+            td = link_to 'Edit', edit_character_path(character)
+            td = link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' }
