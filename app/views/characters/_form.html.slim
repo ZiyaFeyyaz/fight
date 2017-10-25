@@ -22,5 +22,11 @@
     .col-sm-10
       = f.number_field :attack_power, class: 'form-control'
 
+  .form-group.row
+    = f.label :image, class: 'col-sm-2 col-form-label'
+    .col-sm-10
+      = f.file_field :image, class: 'form-control', 'data-placeholder' => 'Choose photo to upload'
+
+
   .actions
     = f.submit class: 'btn btn-primary'

@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'slim', '~> 3.0', '>= 3.0.6'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'carrierwave', '~> 0.11.2'
+gem 'mini_magick', '~> 4.7'
 
 
 group :development, :test do
